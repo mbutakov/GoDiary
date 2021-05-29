@@ -1,0 +1,14 @@
+{{define "create"}}
+
+{{template "header"}}
+<main role="main" class="inner cover">
+    <form action="/save" method="post">
+        <input type="text" name="name" id="name" placholder="Имя"
+        class="form-control"><br>
+        <input type="text" name="age" id="age" placholder="Возвраст"
+        class="form-control"><br>
+        <button class="btn btn-warning">добавить</button>
+    </form>
+</main>
+{{template "footer"}}
+{{end}}
