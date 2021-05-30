@@ -1,0 +1,13 @@
+{{define "listgroup"}}
+  <form action="selectgroup" method="post" name="form1">
+ <p><select name="group">
+     <optgroup label="Группы">
+     {{range .}}
+      <option>{{.GroupNumber}}</option>
+      {{end}}
+          </optgroup>
+ </select></p>
+ <p><input type="submit" value="Выбрать"></p>
+</form>
+
+{{end}}

@@ -1,0 +1,12 @@
+{{define "createGroup"}}
+
+{{template "header"}}
+<main role="main" class="inner cover">
+    <form action="/addGroupSite" method="post">
+        <input type="text" name="groupNumber" id="name" placholder="группа"
+        class="form-control"><br>
+        <button class="btn btn-warning">добавить</button>
+    </form>
+</main>
+{{template "footer"}}
+{{end}}
